@@ -1,0 +1,39 @@
+.carousel {
+  position: relative;
+  background-color: transparent;
+  width: 100%; /* Ensure carousel takes full width of its container */
+}
+
+.carousel .carousel-slider {
+  background-color: transparent !important;
+}
+
+.fadebottom {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-image: linear-gradient(180deg, transparent, #E3E6E6);
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .carousel img {
+    height: auto;
+    max-height: 500px; /* Adjust the height for large screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel img {
+    height: auto;
+    max-height: 400px; /* Adjust the height for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel img {
+    height: auto;
+    max-height: 300px; /* Adjust the height for mobile phones */
+  }
+}

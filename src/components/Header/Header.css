@@ -1,0 +1,318 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.fixed{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #131921;
+  color: white;
+  flex-wrap: wrap; /* Allows the content to wrap when the screen gets smaller */
+}
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from the parent element */
+  color: white;
+}
+
+.logo {
+  width: 100px;
+}
+
+.usa-flag { 
+  width: 30px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.lang {
+  width: 50px;
+  background-color: #131921;
+  color: white;
+  border: none;
+}
+.all{
+  display: flex;
+  align-items: center;
+}
+.address {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  color: white;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.address p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.search-area {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  gap: 0;
+  margin-left: 30px;
+  flex-grow: 1; /* Allow the search area to grow */
+}
+
+.search-area select,
+.search-area input,
+.search-area .search-icon {
+  height: 100%;
+  border: none;
+}
+
+.search-area select {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: #dcdcdc;
+  width: 70px;
+  padding: 0 8px;
+}
+
+.search-area input {
+  flex-grow: 1;
+  padding: 0 10px;
+  border: none;
+}
+.white{
+  color: white;
+}
+.search-area .search-icon {
+  width: 40px;
+  background-color: #f3a847;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  color: white;
+
+}
+
+.signin {
+  padding: 5  px 20px;
+  border-radius: 8px;
+  background-color: #131921;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.signin-div{
+  flex-direction: column;
+  column-gap:0cm;
+}
+.order {
+  color: white;
+  margin-left: 40px;
+  width: 50px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 15px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -13px;
+  right: 0px;
+  background-color:transparent;
+  color:white;
+  padding: 2px 7px;
+  font-size: 12px;
+  font-weight: bold;
+ 
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+  .search-area input {
+    width: 100%; /* Ensure the search input takes full width */
+  }
+
+  .user-actions .signin {
+    font-size: 12px;
+    padding: 8px 15px; /* Reduce padding on smaller screens */
+  }
+
+  .order {
+    margin-left: 20px; /* Adjust spacing for smaller screens */
+  }
+
+  .cart {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack the header items on smaller screens */
+    align-items: center;
+  }
+
+  .search-area {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .logo {
+    width: 80px; /* Shrink logo size */
+  }
+
+  .address p {
+    font-size: 13px; /* Reduce font size for address */
+  }
+
+  .user-actions {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .order {
+    margin-left: 10px;
+  }
+
+  .cart {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 70px; /* Further shrink logo size */
+  }
+
+  .address p {
+    font-size: 12px; /* Further reduce font size for address */
+  }
+
+  .search-area {
+    flex-direction: column;
+    align-items: stretch; /* Stack the search select and input */
+  }
+
+  .search-area select {
+    width: 100%;
+  }
+
+  .search-area input {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .cart-count {
+    top: -8px;
+    right: -8px;
+    font-size: 10px;
+    padding: 1px 5px;
+  }
+}
+
+
+/* lowerheader */
+
+.lists{
+  display: flex;
+  list-style: none;
+  background-color: #232F3E;
+  color: #ffffff;
+  height: 30px;
+  align-items: center;
+}
+.lists li{
+  padding: 5px;
+  margin-left: 10px  ;
+ 
+}
+.lists .all {
+  display: flex;
+  align-items: center;
+}
+.lists .all p{
+  padding-bottom: 20px;
+}
+.lists li:hover{
+  border: 1px rgb(242, 242, 242) solid;
+}
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+  .lists {
+    justify-content: space-around; /* Distribute the items evenly */
+    padding: 0 10px;
+  }
+
+  .lists li {
+    font-size: 14px; /* Reduce the font size slightly */
+    margin-left: 5px; /* Reduce spacing between items */
+  }
+}
+
+@media (max-width: 768px) {
+  .fixed {
+    position: static; /* Remove the sticky behavior */
+  }
+  .lists {
+    flex-direction: column; /* Stack the list items vertically */
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .lists li {
+    margin-left: 0; /* Remove left margin for better stacking */
+    padding: 8px 0; /* Add vertical padding for better spacing */
+    width: 100%; /* Ensure each item takes full width */
+    text-align: left; /* Align text to the left */
+  }
+}
+
+@media (max-width: 480px) {
+ 
+  .lists li {
+    font-size: 12px; /* Further reduce font size for smaller screens */
+    padding: 6px 0; /* Adjust padding for compactness */
+  }
+
+  .lists {
+    padding: 10px 5px; /* Reduce overall padding */
+  }
+}
+.fadebottom::before{
+  content:"";
+  position: absolute;
+  bottom: 0px;
+  width:100%;
+  height: 200px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,255)
+  );
+}

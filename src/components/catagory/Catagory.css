@@ -1,0 +1,84 @@
+.catagories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow cards to wrap to the next row on smaller screens */
+  gap: 20px;
+  position: relative;
+  top: -250px;
+  z-index: 1;
+  margin-bottom: 0px;
+}
+
+/* Individual Category Card */
+.catag-cards {
+  background-color: white;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1px;
+  text-align: center;
+  flex: 0 0 300px; /* Default size for larger screens */
+  transition: transform 0.3s ease;
+}
+
+/* Card hover effect */
+.catag-cards:hover {
+  transform: translateY(-5px);
+}
+
+/* Title Styling */
+.catag-cards h2 {
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* Image Styling */
+.catag-cards img {
+  width: 100%;
+  height: 250px;
+  margin: 10px auto;
+}
+
+/* Fade bottom for carousel */
+.fadebottom {
+  position: absolute;
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+  background-image: linear-gradient(180deg, transparent, rgba(227, 230, 230, 0.5));
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+  .catag-cards {
+    flex: 0 0 250px; /* Adjust card size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .catagories {
+    top: -50px; /* Adjust position of the cards */
+  }
+
+  .catag-cards {
+    flex: 0 0 200px; /* Adjust card size for tablets */
+  }
+
+  .catag-cards img {
+    height: 200px; /* Adjust image height */
+  }
+}
+
+@media (max-width: 480px) {
+  .catagories {
+    top: -150px; /* Adjust position of the cards for smaller screens */
+    gap: 10px; /* Reduce gap between cards */
+  }
+
+  .catag-cards {
+    flex: 0 0 150px; /* Smaller size for mobile devices */
+  }
+
+  .catag-cards img {
+    height: 150px; /* Adjust image height for mobile */
+  }
+}

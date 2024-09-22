@@ -1,0 +1,139 @@
+/* Container for product cards */
+.productsSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Gap between cards */
+  justify-items: center; /* Center items horizontally */
+  margin: 100px; /* Margin from the edge */
+}
+
+/* Individual product card styling */
+.productContainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  margin-top: 0px;
+  top: -200px; /* Adjust to overlap slightly (reduce from -230px) */
+}
+
+/* Image at the top */
+.productContainer img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px; /* Spacing between the image and the title */
+}
+
+/* Product title */
+.productTitle {
+  font-size: 18px;
+  margin: 10px 0;
+  color: black;
+}
+
+/* Rating section */
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+/* Button hidden by default */
+.addToCartButton {
+  display: none;
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 10px;
+  width: 250px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.4s;
+}
+
+/* Show button on hover */
+.productContainer:hover .addToCartButton {
+  display: block;
+}
+
+/* Card hover effect */
+.productContainer:hover {
+  transform: translateY(-5px);
+}
+
+.addToCartButton:hover {
+  background-color: #ddb347;
+}
+
+
+/* Flex container styling */
+
+
+.productflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* For the image when in flex mode */
+.productflex img {
+  flex: 1; /* Image will take up some space on the left */
+  max-width: 200px; /* Control the image size */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Spacing between image and content */
+}
+
+/* Content on the right in flex mode */
+.productflex .productInfo {
+  flex: 2; /* Content will take more space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* For the title inside the flex container */
+.productflex .productTitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* For the rating inside the flex container */
+.productflex .rating {
+  margin-bottom: 10px;
+  justify-content: flex-start; /* Align rating on the left */
+}
+
+/* Button hidden by default */
+/* .productflex .addToCartButton {
+  display: none;
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 10px;
+  width: 70%;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.4s;
+} */
+
+/* Show button on hover */
+.productContainer:hover .addToCartButton {
+  display: block;
+}
+
+
+
+/* Card hover effect */
+.productContainer:hover {
+  transform: translateY(-5px);
+}
+
+/* description */
+.desc{
+  width: 600px;
+  margin:10px;
+}

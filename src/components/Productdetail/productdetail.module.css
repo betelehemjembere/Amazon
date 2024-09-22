@@ -1,0 +1,60 @@
+/* Main container for product details */
+.maindetail {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh; /* Ensures the content takes up most of the viewport height */
+  padding: 20px;
+  /* background-color: #f9f9f9; */
+}
+
+/* Add some margin around the product card */
+.product-container {
+  max-width: 600px;
+  margin: 20px;
+}
+
+/* Loading message styling */
+p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .maindetail {
+    margin-top: 200px; /* Reduce top margin for smaller screens */
+    padding: 10px;
+  }
+
+  .product-container {
+    max-width: 90%; /* Make the product container take up more space on smaller screens */
+    margin: 10px;
+  }
+
+  p {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .maindetail {
+    margin-top: 200px; /* Reduce top margin further for mobile */
+    padding: 5px;
+  }
+
+  .product-container {
+    max-width: 100%; /* Make the product container full width on mobile */
+    margin: 5px;
+  }
+
+  p {
+    font-size: 14px; /* Further reduce font size for mobile */
+  }
+}

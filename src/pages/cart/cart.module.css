@@ -1,0 +1,114 @@
+.mainCart {
+    padding: 20px; /* Add some padding to the cart container */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto; 
+  }
+  
+  .mainCart h2 {
+    margin-bottom: 15px; /* Add spacing below the h2 */
+    font-size: 24px;
+  }
+  
+  .mainCart h3 {
+    font-size: 20px;
+    margin-bottom: 20px; /* Add spacing below the h3 */
+
+  }
+  .mainCart hr{
+    margin-bottom: 230px; /* Add spacing below the h3 */
+    color: #888;
+  }
+/*   
+  .productContainer {
+    margin-top: -200px;
+    margin-bottom: 400px; /* Add spacing below each product card 
+
+  }
+   */
+  .cartEmptyMessage {
+    font-size: 16px;
+    color: #888;
+    margin-top: 20px;
+  }
+  .subtotal {
+    /* Styling for the subtotal container */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:center; /* Aligns to the right */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 300px; /* Adjust width */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional for a nice effect */
+    margin-left: 30px; /* Keeps it away from the edge */
+  }
+  
+  .subtotal p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .subtotal span {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between checkbox and text */
+  }
+  
+  .subtotal button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e8ae1c;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 60%; /* Full width of the container */
+    border: none;
+  }
+  
+  .subtotal button:hover {
+    background-color: #005bb5;
+  }
+  .productRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ 
+    margin-bottom: 15px; /*Spacing between product rows*/
+  }
+  
+  .productInfo {
+    flex: 1;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .buttonContainer button {
+    padding: 5px 10px;
+    background-color: #e8ae1c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+ 
+  .buttonContainer button:hover {
+    background-color: #005bb5;
+  }
+  
+  .buttonContainer span {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  
