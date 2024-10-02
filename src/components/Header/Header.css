@@ -89,6 +89,8 @@ a {
 }
 .white{
   color: white;
+  font-size: 10px;
+  
 }
 .search-area .search-icon {
   width: 40px;
@@ -108,18 +110,43 @@ a {
 
 }
 
-.signin {
-  padding: 5  px 20px;
-  border-radius: 8px;
-  background-color: #131921;
-  border: none;
-  cursor: pointer;
-  color: white;
-}
-.signin-div{
+
+.signin-div {
+  padding-left: 5px; /* Reduced padding to close the gap */
   flex-direction: column;
-  column-gap:0cm;
+  column-gap: 0;
+  align-items: flex-start; /* Align content to start */
+  line-height: 1.2; /* Adjust line-height to reduce space between lines */
+  font-size: 1px; /* Set a consistent font size */
 }
+
+.signin {
+ 
+  padding: 0; /* Remove padding inside the button */
+  font-size: 15px; /* Slightly smaller font size for balance */
+  background-color: #131921;
+  color: white; 
+  border: none; /* Remove any borders */
+  cursor: pointer;
+}
+.signin p{
+  font-size: 15px;
+  color: white; 
+}
+
+.notification {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ff9800;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  z-index: 9999;
+}
+
+
 .order {
   color: white;
   margin-left: 40px;
@@ -146,6 +173,9 @@ a {
   font-size: 12px;
   font-weight: bold;
  
+}
+.hover:hover{
+  border: 1px rgb(242, 242, 242) solid;
 }
 
 /* Media Queries for Responsiveness */

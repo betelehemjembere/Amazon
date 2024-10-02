@@ -1,9 +1,8 @@
 .mainCart {
-    padding: 20px; /* Add some padding to the cart container */
     padding: 20px;
     display: flex;
     flex-direction: row;
-    max-width: 1200px;
+    max-width: 4000px;
     margin: 0 auto; 
   }
   
@@ -44,7 +43,8 @@
     border-radius: 8px;
     width: 300px; /* Adjust width */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional for a nice effect */
-    margin-left: 30px; /* Keeps it away from the edge */
+    /* margin-left: 30px;  */
+    /* Keeps it away from the edge */
   }
   
   .subtotal p {

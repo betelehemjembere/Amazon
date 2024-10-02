@@ -1,0 +1,67 @@
+.hr{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.checkout{
+    text-align: center;
+    padding:  30px;
+    font-size: 20px;
+}
+.paymentflexs {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 100px;
+  }
+  
+  .paymentflexs h3 {
+    min-width: 100px;
+   
+  }
+  .paymentflexs .paymentproductcard{
+    margin-top: 200px;
+  }
+
+  .eachcard{
+    height: auto !important;
+  
+  }.paymentfrom {
+    max-width: 350px;
+    width: 100%;
+    font-size: 16px; /* Remove the quotes around font-size */
+    color: #424770;  /* Remove quotes around color */
+  }
+  
+  .paymentfrom form {
+    margin-top: 20px;
+  }
+  
+  .paymentfrom button {
+    width: 100%; /* Make button width responsive */
+    background-color: rgb(246, 179, 53);
+    text-align: center;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .paymentfrom button:hover {
+    background-color: rgb(234, 205, 151);
+  }
+  
+  .processing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  @media screen and (max-width: 796px) {
+    .paymentflexs {
+      flex-direction: column;
+    }
+  }

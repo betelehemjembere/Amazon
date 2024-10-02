@@ -1,0 +1,72 @@
+body{
+    background-color: white;
+}
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: white; */
+   margin: 20px 500px;
+}
+.maincontainer img{
+    width: 150px;
+    height: auto;
+}
+.innercontainer{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+   border: 1px solid rgb(209, 208, 208);
+   border-radius: 5px;
+   width: 100%;
+   padding-bottom: 40px;
+}
+.innercontainer form {
+    display: flex;
+    flex-direction: column;
+   gap: 20px;
+   padding-left: 10px;
+}
+.innercontainer input{
+    margin-top: 8px;
+    padding: 5px;
+    width: 100%;
+}
+.innercontainer input:focus{
+    background-color: lightblue;
+}
+.innercontainer input:hover{
+    border: 2px solid rgb(169, 169, 225);
+}
+.innercontainer h1{
+    padding: 20px 10px;
+    font-size: 30px;
+    padding-top: 30px;
+}
+.innercontainer button{
+    margin: 0 auto;
+    width: 300px;
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    border-radius: 5px;
+    padding: 8px 0;
+}
+.innercontainer button:hover{
+    background-color: #ddb347;
+}
+.innercontainer p{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+.innercontainer .createbutton{
+    margin: 0 auto;
+    width: 300px;
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 8px 0;
+}
+.innercontainer .createbutton:hover{
+    background-color: grey;
+}

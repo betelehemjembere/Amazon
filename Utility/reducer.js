@@ -1,5 +1,6 @@
 export const initialstate = {
-  basket: [], // Initialize basket as an array
+  basket: [],
+  user:null, // Initialize basket as an array
 };
 
 export const reducer = (state, action) => {
@@ -41,6 +42,20 @@ export const reducer = (state, action) => {
           ...state,
           basket: newBasket,
         };
+
+        case 'EMPTY_BASKET':
+      // Clears the basket after payment
+      return {
+        ...state,
+        basket: [],
+      };
+
+        case 'SET_USER':
+          return{
+            ...state,
+            user:action.user,
+          };
+       
 
     default:
       return state;
